@@ -2,12 +2,12 @@
 //  Window.cpp
 //  smflGame
 //
-//  Created by Jose Teixeira on 15/01/19.
 //  Copyright © 2019 ZeCDev. All rights reserved.
 //
 
 #include "Window.hpp"
 #include "ResourcePath.hpp"
+#include <signal.h>
 
 #define FONT_FILE "sansation.ttf"
 
@@ -66,7 +66,9 @@ namespace SMFLGame
         {
             // Close window: exit
             if (event.type == sf::Event::Closed) {
+                setState(Idle);
                 getWindow()->close();
+                std::exit(EXIT_SUCCESS);
                 return;
             }
             
@@ -81,14 +83,7 @@ namespace SMFLGame
                         
                     case sf::Keyboard::S:
                         printf("Start pressed\n");
-                        if(getPlayer()->getCreditsAvailableCounter() > 0){
-                            getPlayer()->addPlayed(1);
-                            startPressed();
-                        }
-                        else{
-                            printf("Credits unavailable\n");
-                        }
-                        
+                        _startPressed();
                         break;
                         
                     case sf::Keyboard::I:
@@ -105,11 +100,15 @@ namespace SMFLGame
                         printf("Invalid key\n");
                         break;
                 }
-                
-                return;
             }
             
-            this->display();
+            // Clear screen
+            getWindow()->clear();
+            
+            this->_beforeDisplay();
+            
+            // Update the window
+            getWindow()->display();
         }
     }
 }

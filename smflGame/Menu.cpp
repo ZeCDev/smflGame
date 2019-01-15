@@ -2,7 +2,6 @@
 //  Menu.cpp
 //  smflGame
 //
-//  Created by Jose Teixeira on 13/01/19.
 //  Copyright © 2019 ZeCDev. All rights reserved.
 //
 
@@ -122,20 +121,22 @@ namespace SMFLGame
         getWindow()->draw(played);
     }
     
-    void Menu::display()
+    void Menu::_beforeDisplay()
     {
-        // Clear screen
-        getWindow()->clear();
-        
         _drawSprites();
         _drawCounters();
-        
-        // Update the window
-        getWindow()->display();
     }
     
-    void Menu::startPressed()
+    void Menu::_startPressed()
     {
+        if(getPlayer()->getCreditsAvailableCounter() > 0){
+            getPlayer()->addPlayed(1);
+        }
+        else{
+            printf("Credits unavailable\n");
+            return;
+        }
+        
         _getGame()->run();
     }
 }

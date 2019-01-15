@@ -2,7 +2,6 @@
 //  Player.cpp
 //  smflGame
 //
-//  Created by Jose Teixeira on 15/01/19.
 //  Copyright © 2019 ZeCDev. All rights reserved.
 //
 

@@ -2,7 +2,6 @@
 //  Window.hpp
 //  smflGame
 //
-//  Created by Jose Teixeira on 15/01/19.
 //  Copyright © 2019 ZeCDev. All rights reserved.
 //
 
@@ -54,8 +53,8 @@ namespace SMFLGame
         SMFLGame::Player * _player;
         State _state;
         
-        virtual void display() = 0; // must be override
-        virtual void startPressed() = 0;
+        virtual void _beforeDisplay() = 0; // must be override
+        virtual void _startPressed() = 0;
     };
 }
 

@@ -2,7 +2,6 @@
 //  Game.hpp
 //  smflGame
 //
-//  Created by Jose Teixeira on 14/01/19.
 //  Copyright © 2019 ZeCDev. All rights reserved.
 //
 
@@ -29,9 +28,9 @@ namespace SMFLGame
         
         void _resumeNewGame();
         
-        void startPressed();
+        void _startPressed();
         
-        void display();
+        void _beforeDisplay();
     };
 }
 
