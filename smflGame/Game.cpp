@@ -46,35 +46,20 @@ namespace SMFLGame
         switch (getState())
         {
             case Idle:
-                _startNewGame();
+                printf("Start a new game\n");
                 setState(Running);
                 break;
                 
             case Running:
-                _pauseNewGame();
+                printf("Game paused\n");
                 setState(Stopped);
                 break;
             
             case Stopped:
-                _resumeNewGame();
+                printf("Resume game\n");
                 setState(Running);
                 break;
         }
-    }
-    
-    void Game::_startNewGame()
-    {
-        printf("Start a new game\n");
-    }
-    
-    void Game::_pauseNewGame()
-    {
-        printf("Game paused\n");
-    }
-    
-    void Game::_resumeNewGame()
-    {
-        printf("Resume game\n");
     }
     
     void Game::_updateObjectsPosition()

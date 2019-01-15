@@ -26,10 +26,6 @@ namespace SMFLGame
         
         sf::CircleShape * getCircle();
         
-        void _startNewGame();
-        void _pauseNewGame();
-        void _resumeNewGame();
-        
         void _startPressed();
         void _beforeDisplay();
         void _afterDisplay();
