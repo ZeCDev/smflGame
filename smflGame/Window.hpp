@@ -54,6 +54,7 @@ namespace SMFLGame
         State _state;
         
         virtual void _beforeDisplay() = 0; // must be override
+        virtual void _afterDisplay() = 0;
         virtual void _startPressed() = 0;
     };
 }

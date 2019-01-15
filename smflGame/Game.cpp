@@ -11,39 +11,32 @@
 namespace SMFLGame
 {
     Game::Game(sf::RenderWindow *window, SMFLGame::Player * player)
-    :Window(window, player)
+    :Window(window, player), _circle(NULL)
     {
     }
     
     Game::~Game()
     {
     }
+    
+    sf::CircleShape * Game::getCircle()
+    {
+        if(_circle == NULL){
+            _circle = new sf::CircleShape(40);
+            _circle->setFillColor(sf::Color(255, 0, 0));
+            _circle->setPosition(100, 100);
+        }
+        return _circle;
+    }
 
     void Game::_beforeDisplay()
-    {        
-        sf::CircleShape circleRed(80);
-        sf::CircleShape circleGreen(80);
-        sf::CircleShape circleBlue(80);
-        
-        circleRed.setFillColor(sf::Color(255, 0, 0));
-        circleGreen.setFillColor(sf::Color(0, 255, 0));
-        circleBlue.setFillColor(sf::Color(0, 0, 255));
-        
-        circleRed.setPosition(100, 100);
-        
-        float xGreen = 200;
-        float yGreen = 200;
-        
-        float xBlue = 300;
-        float yBlue = 300;
-        
-        circleGreen.setPosition(xGreen, yGreen);
-        
-        circleBlue.setPosition(xBlue, yBlue);
-        
-        getWindow()->draw(circleRed);
-        getWindow()->draw(circleGreen);
-        getWindow()->draw(circleBlue);
+    {
+        getWindow()->draw(*getCircle());
+    }
+    
+    void Game::_afterDisplay()
+    {
+        _updateObjectsPosition();
     }
     
     void Game::_startPressed()
@@ -82,5 +75,13 @@ namespace SMFLGame
     void Game::_resumeNewGame()
     {
         printf("Resume game\n");
+    }
+    
+    void Game::_updateObjectsPosition()
+    {
+        if(getState() != Running){
+            return;
+        }
+        getCircle()->setPosition(getCircle()->getPosition().x + 0.1, getCircle()->getPosition().y);
     }
 }

@@ -127,6 +127,9 @@ namespace SMFLGame
         _drawCounters();
     }
     
+    void Menu::_afterDisplay()
+    {}
+    
     void Menu::_startPressed()
     {
         if(getPlayer()->getCreditsAvailableCounter() > 0){

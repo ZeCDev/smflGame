@@ -97,7 +97,6 @@ namespace SMFLGame
                         break;
                         
                     default:
-                        printf("Invalid key\n");
                         break;
                 }
             }
@@ -109,6 +108,8 @@ namespace SMFLGame
             
             // Update the window
             getWindow()->display();
+            
+            this->_afterDisplay();
         }
     }
 }

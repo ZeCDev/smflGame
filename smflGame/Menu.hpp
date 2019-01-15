@@ -66,6 +66,7 @@ namespace SMFLGame
         SMFLGame::Game *_getGame();
         
         void _beforeDisplay();
+        void _afterDisplay();
         void _startPressed();
     };
 }
