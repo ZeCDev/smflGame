@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9986433521EB5E1D007FBBAC /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9986433421EB5E1D007FBBAC /* ResourcePath.mm */; };
+		9986433821EB5E1D007FBBAC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9986433721EB5E1D007FBBAC /* main.cpp */; };
+		9986434921EB7B84007FBBAC /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9986434721EB7B84007FBBAC /* Menu.cpp */; };
+		9986437921EBA805007FBBAC /* CreditsOutActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986436B21EBA805007FBBAC /* CreditsOutActive.png */; };
+		9986437A21EBA805007FBBAC /* StartHover.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986436C21EBA805007FBBAC /* StartHover.png */; };
+		9986437B21EBA805007FBBAC /* BlueButton-Active.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986436D21EBA805007FBBAC /* BlueButton-Active.png */; };
+		9986437C21EBA805007FBBAC /* YellowButton-Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986436E21EBA805007FBBAC /* YellowButton-Hover.png */; };
+		9986437D21EBA805007FBBAC /* YellowButton-Active.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986436F21EBA805007FBBAC /* YellowButton-Active.png */; };
+		9986437E21EBA805007FBBAC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986437021EBA805007FBBAC /* icon.png */; };
+		9986437F21EBA805007FBBAC /* StartActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986437121EBA805007FBBAC /* StartActive.png */; };
+		9986438021EBA805007FBBAC /* CreditsInActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986437221EBA805007FBBAC /* CreditsInActive.png */; };
+		9986438121EBA805007FBBAC /* CreditsOutHover.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986437321EBA805007FBBAC /* CreditsOutHover.png */; };
+		9986438221EBA805007FBBAC /* CreditsInHover.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986437421EBA805007FBBAC /* CreditsInHover.png */; };
+		9986438321EBA805007FBBAC /* BlueButton-Hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986437521EBA805007FBBAC /* BlueButton-Hover.png */; };
+		9986438421EBA805007FBBAC /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9986437621EBA805007FBBAC /* sansation.ttf */; };
+		9986438521EBA805007FBBAC /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 9986437721EBA805007FBBAC /* nice_music.ogg */; };
+		9986438721ECBE6A007FBBAC /* backgroundMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9986438621ECBE6A007FBBAC /* backgroundMenu.png */; };
+		9986438A21ED2F49007FBBAC /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9986438821ED2F49007FBBAC /* Game.cpp */; };
+		9986438D21EE6154007FBBAC /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9986438B21EE6154007FBBAC /* Player.cpp */; };
+		9986439021EE6928007FBBAC /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9986438E21EE6928007FBBAC /* Window.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9986432F21EB5E1D007FBBAC /* smflGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smflGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9986433321EB5E1D007FBBAC /* smflGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "smflGame-Info.plist"; sourceTree = "<group>"; };
+		9986433421EB5E1D007FBBAC /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		9986433621EB5E1D007FBBAC /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		9986433721EB5E1D007FBBAC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9986434721EB7B84007FBBAC /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		9986434821EB7B84007FBBAC /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
+		9986436B21EBA805007FBBAC /* CreditsOutActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsOutActive.png; sourceTree = "<group>"; };
+		9986436C21EBA805007FBBAC /* StartHover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartHover.png; sourceTree = "<group>"; };
+		9986436D21EBA805007FBBAC /* BlueButton-Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BlueButton-Active.png"; sourceTree = "<group>"; };
+		9986436E21EBA805007FBBAC /* YellowButton-Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YellowButton-Hover.png"; sourceTree = "<group>"; };
+		9986436F21EBA805007FBBAC /* YellowButton-Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YellowButton-Active.png"; sourceTree = "<group>"; };
+		9986437021EBA805007FBBAC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		9986437121EBA805007FBBAC /* StartActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartActive.png; sourceTree = "<group>"; };
+		9986437221EBA805007FBBAC /* CreditsInActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsInActive.png; sourceTree = "<group>"; };
+		9986437321EBA805007FBBAC /* CreditsOutHover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsOutHover.png; sourceTree = "<group>"; };
+		9986437421EBA805007FBBAC /* CreditsInHover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CreditsInHover.png; sourceTree = "<group>"; };
+		9986437521EBA805007FBBAC /* BlueButton-Hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BlueButton-Hover.png"; sourceTree = "<group>"; };
+		9986437621EBA805007FBBAC /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		9986437721EBA805007FBBAC /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		9986438621ECBE6A007FBBAC /* backgroundMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundMenu.png; sourceTree = "<group>"; };
+		9986438821ED2F49007FBBAC /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		9986438921ED2F49007FBBAC /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		9986438B21EE6154007FBBAC /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		9986438C21EE6154007FBBAC /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		9986438E21EE6928007FBBAC /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		9986438F21EE6928007FBBAC /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9986432B21EB5E1D007FBBAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9986432521EB5E1D007FBBAC = {
+			isa = PBXGroup;
+			children = (
+				9986433121EB5E1D007FBBAC /* smflGame */,
+				9986433021EB5E1D007FBBAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9986433021EB5E1D007FBBAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9986432F21EB5E1D007FBBAC /* smflGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9986433121EB5E1D007FBBAC /* smflGame */ = {
+			isa = PBXGroup;
+			children = (
+				9986433421EB5E1D007FBBAC /* ResourcePath.mm */,
+				9986433621EB5E1D007FBBAC /* ResourcePath.hpp */,
+				9986438E21EE6928007FBBAC /* Window.cpp */,
+				9986438F21EE6928007FBBAC /* Window.hpp */,
+				9986434721EB7B84007FBBAC /* Menu.cpp */,
+				9986434821EB7B84007FBBAC /* Menu.hpp */,
+				9986438821ED2F49007FBBAC /* Game.cpp */,
+				9986438921ED2F49007FBBAC /* Game.hpp */,
+				9986438B21EE6154007FBBAC /* Player.cpp */,
+				9986438C21EE6154007FBBAC /* Player.hpp */,
+				9986433721EB5E1D007FBBAC /* main.cpp */,
+				9986433921EB5E1D007FBBAC /* Resources */,
+				9986433221EB5E1D007FBBAC /* Supporting Files */,
+			);
+			path = smflGame;
+			sourceTree = "<group>";
+		};
+		9986433221EB5E1D007FBBAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9986433321EB5E1D007FBBAC /* smflGame-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9986433921EB5E1D007FBBAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9986438621ECBE6A007FBBAC /* backgroundMenu.png */,
+				9986436D21EBA805007FBBAC /* BlueButton-Active.png */,
+				9986437521EBA805007FBBAC /* BlueButton-Hover.png */,
+				9986437221EBA805007FBBAC /* CreditsInActive.png */,
+				9986437421EBA805007FBBAC /* CreditsInHover.png */,
+				9986436B21EBA805007FBBAC /* CreditsOutActive.png */,
+				9986437321EBA805007FBBAC /* CreditsOutHover.png */,
+				9986437021EBA805007FBBAC /* icon.png */,
+				9986437721EBA805007FBBAC /* nice_music.ogg */,
+				9986437621EBA805007FBBAC /* sansation.ttf */,
+				9986437121EBA805007FBBAC /* StartActive.png */,
+				9986436C21EBA805007FBBAC /* StartHover.png */,
+				9986436F21EBA805007FBBAC /* YellowButton-Active.png */,
+				9986436E21EBA805007FBBAC /* YellowButton-Hover.png */,
+			);
+			name = Resources;
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9986432E21EB5E1D007FBBAC /* smflGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9986434421EB5E1D007FBBAC /* Build configuration list for PBXNativeTarget "smflGame" */;
+			buildPhases = (
+				9986432A21EB5E1D007FBBAC /* Sources */,
+				9986432B21EB5E1D007FBBAC /* Frameworks */,
+				9986432C21EB5E1D007FBBAC /* Resources */,
+				9986432D21EB5E1D007FBBAC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smflGame;
+			productName = smflGame;
+			productReference = 9986432F21EB5E1D007FBBAC /* smflGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9986432621EB5E1D007FBBAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ZeCDev;
+				TargetAttributes = {
+					9986432E21EB5E1D007FBBAC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 9986432921EB5E1D007FBBAC /* Build configuration list for PBXProject "smflGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9986432521EB5E1D007FBBAC;
+			productRefGroup = 9986433021EB5E1D007FBBAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9986432E21EB5E1D007FBBAC /* smflGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9986432C21EB5E1D007FBBAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9986437C21EBA805007FBBAC /* YellowButton-Hover.png in Resources */,
+				9986437E21EBA805007FBBAC /* icon.png in Resources */,
+				9986438721ECBE6A007FBBAC /* backgroundMenu.png in Resources */,
+				9986438121EBA805007FBBAC /* CreditsOutHover.png in Resources */,
+				9986437D21EBA805007FBBAC /* YellowButton-Active.png in Resources */,
+				9986437F21EBA805007FBBAC /* StartActive.png in Resources */,
+				9986438521EBA805007FBBAC /* nice_music.ogg in Resources */,
+				9986438221EBA805007FBBAC /* CreditsInHover.png in Resources */,
+				9986437B21EBA805007FBBAC /* BlueButton-Active.png in Resources */,
+				9986438321EBA805007FBBAC /* BlueButton-Hover.png in Resources */,
+				9986437921EBA805007FBBAC /* CreditsOutActive.png in Resources */,
+				9986438021EBA805007FBBAC /* CreditsInActive.png in Resources */,
+				9986438421EBA805007FBBAC /* sansation.ttf in Resources */,
+				9986437A21EBA805007FBBAC /* StartHover.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9986432D21EB5E1D007FBBAC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nSFML_DEPENDENCIES_INSTALL_PREFIX=\"/Users/SFML/Desktop/packaging/tmp/install/Library/Frameworks\"\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Users/SFML/Desktop/packaging/tmp/install/Library/Frameworks\"\nCMAKE_INSTALL_LIB_PREFIX=\"/Users/SFML/Desktop/packaging/tmp/install/Library/Frameworks/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$SFML_DEPENDENCIES_INSTALL_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$SFML_DEPENDENCIES_INSTALL_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9986432A21EB5E1D007FBBAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9986434921EB7B84007FBBAC /* Menu.cpp in Sources */,
+				9986439021EE6928007FBBAC /* Window.cpp in Sources */,
+				9986433821EB5E1D007FBBAC /* main.cpp in Sources */,
+				9986433521EB5E1D007FBBAC /* ResourcePath.mm in Sources */,
+				9986438A21ED2F49007FBBAC /* Game.cpp in Sources */,
+				9986438D21EE6154007FBBAC /* Player.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9986434221EB5E1D007FBBAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		9986434321EB5E1D007FBBAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		9986434521EB5E1D007FBBAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "smflGame/smflGame-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9986434621EB5E1D007FBBAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "smflGame/smflGame-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9986432921EB5E1D007FBBAC /* Build configuration list for PBXProject "smflGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9986434221EB5E1D007FBBAC /* Debug */,
+				9986434321EB5E1D007FBBAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9986434421EB5E1D007FBBAC /* Build configuration list for PBXNativeTarget "smflGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9986434521EB5E1D007FBBAC /* Debug */,
+				9986434621EB5E1D007FBBAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9986432621EB5E1D007FBBAC /* Project object */;
+}
