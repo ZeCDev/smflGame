@@ -24,11 +24,15 @@ namespace SMFLGame
         
         sf::CircleShape * _circle;
         
-        sf::CircleShape * getCircle();
+        sf::CircleShape * _getCircle();
         
         void _startPressed();
         void _beforeDisplay();
         void _afterDisplay();
+        
+        void _setToBeginPositions();
+        
+        bool _isOutOfBounds(sf::CircleShape shape);
         
         void _updateObjectsPosition();
     };

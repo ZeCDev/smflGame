@@ -58,9 +58,13 @@ namespace SMFLGame
         void setState(State state);
         
         /**
-         This function start the activity of a new window.
-         */
-         void run();
+        This function start the activity of a new window.
+        */
+        void run();
+        
+        void creditsInPressed();
+        
+        void creditsOutPressed();
         
     private:
         sf::RenderWindow *_window;
@@ -85,6 +89,8 @@ namespace SMFLGame
          will be called when the player press the start button.
          */
         virtual void _startPressed() = 0;
+        
+        virtual void _mousePressed(sf::Vector2f vec);
     };
 }
 

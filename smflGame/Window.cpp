@@ -56,48 +56,81 @@ namespace SMFLGame
         this->_state = state;
     }
     
+    void Window::_mousePressed(sf::Vector2f vec)
+    {
+        //empty
+    }
+    
+    void Window::creditsInPressed()
+    {
+        getPlayer()->addCredits(1);
+    }
+    
+    void Window::creditsOutPressed()
+    {
+        getPlayer()->removeCredits(1);
+    }
+    
     void Window::run()
     {
         setState(Running);
         
-        // Process events
-        sf::Event event;
-        while (getWindow()->pollEvent(event) || getState() != Idle)
+        while(getState() != Idle)
         {
-            // Close window: exit
-            if (event.type == sf::Event::Closed) {
-                setState(Idle);
-                getWindow()->close();
-                std::exit(EXIT_SUCCESS);
-                return;
-            }
+            // Process events
+            sf::Event event;
             
-            // Escape pressed: exit
-            if (event.type == sf::Event::KeyPressed) {
+            if (getWindow()->pollEvent(event))
+            {
+                // Close window: exit
+                if (event.type == sf::Event::Closed) {
+                    setState(Idle);
+                    getWindow()->close();
+                    std::exit(EXIT_SUCCESS);
+                    return;
+                }
                 
-                switch (event.key.code)
+                // Escape pressed: exit
+                if (event.type == sf::Event::KeyPressed) {
+                    
+                    switch (event.key.code)
+                    {
+                        case sf::Keyboard::Escape:
+                            getWindow()->close();
+                            break;
+                            
+                        case sf::Keyboard::S:
+                            printf("Start pressed\n");
+                            _startPressed();
+                            break;
+                            
+                        case sf::Keyboard::I:
+                            printf("Credits in pressed\n");
+                            creditsInPressed();
+                            break;
+                            
+                        case sf::Keyboard::O:
+                            printf("Credits out pressed\n");
+                            creditsOutPressed();
+                            break;
+                            
+                        default:
+                            break;
+                    }
+                }
+                
+                else if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
                 {
-                    case sf::Keyboard::Escape:
-                        getWindow()->close();
-                        break;
-                        
-                    case sf::Keyboard::S:
-                        printf("Start pressed\n");
-                        _startPressed();
-                        break;
-                        
-                    case sf::Keyboard::I:
-                        getPlayer()->addCredits(1);
-                        printf("Credits in pressed\n");
-                        break;
-                        
-                    case sf::Keyboard::O:
-                        getPlayer()->removeCredits(1);
-                        printf("Credits out pressed\n");
-                        break;
-                        
-                    default:
-                        break;
+                    while(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+                        //ignore repeated events
+                    }
+                    
+                    // get the current mouse position in the window
+                    sf::Vector2i pixelPos = sf::Mouse::getPosition(*getWindow());
+                    // convert it to world coordinates
+                    sf::Vector2f worldPos = getWindow()->mapPixelToCoords(pixelPos);
+                    
+                    _mousePressed(worldPos);
                 }
             }
             

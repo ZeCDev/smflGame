@@ -65,9 +65,13 @@ namespace SMFLGame
         
         SMFLGame::Game *_getGame();
         
+        bool _isClicked(sf::Sprite* sprite, sf::Vector2f vec);
+        
         void _beforeDisplay();
         void _afterDisplay();
         void _startPressed();
+        
+        void _mousePressed(sf::Vector2f vec);
     };
 }
 

@@ -142,4 +142,29 @@ namespace SMFLGame
         
         _getGame()->run();
     }
+    
+    bool Menu::_isClicked(sf::Sprite* sprite, sf::Vector2f vec)
+    {
+        if (sprite->getPosition().x <= vec.x && sprite->getPosition().x >= vec.x - 166 && sprite->getPosition().y <= vec.y && sprite->getPosition().y >= vec.y - 166)
+        {
+            return true;
+        }
+        return false;
+    }
+    
+    void Menu::_mousePressed(sf::Vector2f vec)
+    {
+        if (_isClicked(_getStartButton(), vec))
+        {
+            _startPressed();
+        }
+        else if(_isClicked(_getCreditsInButton(), vec))
+        {
+            creditsInPressed();
+        }
+        else if(_isClicked(_getCreditsOutButton(), vec))
+        {
+            creditsOutPressed();
+        }
+    }
 }

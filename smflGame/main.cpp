@@ -34,6 +34,7 @@ int main(int, char const**)
         return EXIT_FAILURE;
     }
     window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
+    window.setKeyRepeatEnabled(false);
 
     // Load a music to play
     sf::Music music;
