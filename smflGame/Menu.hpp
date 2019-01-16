@@ -38,7 +38,6 @@ namespace SMFLGame
         
         /**
          Allocate a texture and load a image from file passed by parameter.
-         
          @param file The name of the file on resourcesPath.
          @return The new allocated texture.
          */
@@ -48,29 +47,79 @@ namespace SMFLGame
          If the _background is NULL, this function allocate and initialize,
          _backgroundTexture and _background variable, otherwise
          return the sprite existent in _background variable.
-         
          @return The sprite used in background.
          */
         sf::Sprite *_getBackground();
         
+        /**
+         If the _startButton is NULL, this function allocate and initialize,
+         _startButtonTexture and _startButton variable, otherwise
+         return the sprite existent in _startButton variable.
+         @return The sprite used in startButton.
+         */
         sf::Sprite *_getStartButton();
         
+        /**
+         If the _creditsInButton is NULL, this function allocate and initialize,
+         _creditsInButtonTexture and _creditsInButton variable, otherwise
+         return the sprite existent in _creditsInButton variable.
+         @return The sprite used in creditsInButton.
+         */
         sf::Sprite *_getCreditsInButton();
         
+        /**
+         If the _creditsOutButton is NULL, this function allocate and initialize,
+         _creditsOutButtonTexture and _creditsOutButton variable, otherwise
+         return the sprite existent in creditsOutButton variable.
+         @return The sprite used in creditsInButton.
+         */
         sf::Sprite *_getCreditsOutButton();
         
+        /**
+         This function draw all menu sprites on the window.
+         */
         void _drawSprites();
         
+        /**
+         This function draw all the text counters on the window.
+         */
         void _drawCounters();
         
+        /**
+         If the _game is NULL, this function allocate and initialize,
+         _game variable, otherwise return the Game existent in
+         game variable.
+         @return The game window.
+         */
         SMFLGame::Game *_getGame();
         
+        /**
+         This function evaluate if a sprite is clicked.
+         @param sprite The sprite to be evaluated.
+         @param vec The point to be compared.
+         @return true if the sprite position it's part of vec
+         otherwise return false.
+         */
         bool _isClicked(sf::Sprite* sprite, sf::Vector2f vec);
         
+        /**
+         @See superclass
+         */
         void _beforeDisplay();
+        
+        /**
+         @See superclass
+         */
         void _afterDisplay();
+        
+        /**
+         @See superclass
+         */
         void _startPressed();
         
+        /**
+         @See superclass
+         */
         void _mousePressed(sf::Vector2f vec);
     };
 }

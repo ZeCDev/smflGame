@@ -58,7 +58,7 @@ namespace SMFLGame
         void setState(State state);
         
         /**
-        This function start the activity of a new window.
+        This function start the activity in the window.
         */
         void run();
         
@@ -86,6 +86,11 @@ namespace SMFLGame
          */
         virtual void _startPressed() = 0;
         
+        /**
+         This function can be implemented on the derived class and
+         will be called when the mouse is pressed.
+         @param vec The position of the mouse on it's pressed.
+         */
         virtual void _mousePressed(sf::Vector2f vec);
     };
 }
