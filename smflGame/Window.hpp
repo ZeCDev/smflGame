@@ -62,10 +62,6 @@ namespace SMFLGame
         */
         void run();
         
-        void creditsInPressed();
-        
-        void creditsOutPressed();
-        
     private:
         sf::RenderWindow *_window;
         sf::Font *_font;

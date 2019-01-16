@@ -61,16 +61,6 @@ namespace SMFLGame
         //empty
     }
     
-    void Window::creditsInPressed()
-    {
-        getPlayer()->addCredits(1);
-    }
-    
-    void Window::creditsOutPressed()
-    {
-        getPlayer()->removeCredits(1);
-    }
-    
     void Window::run()
     {
         setState(Running);
@@ -106,12 +96,12 @@ namespace SMFLGame
                             
                         case sf::Keyboard::I:
                             printf("Credits in pressed\n");
-                            creditsInPressed();
+                            getPlayer()->addCredits(1);
                             break;
                             
                         case sf::Keyboard::O:
                             printf("Credits out pressed\n");
-                            creditsOutPressed();
+                            getPlayer()->removeCredits(1);
                             break;
                             
                         default:

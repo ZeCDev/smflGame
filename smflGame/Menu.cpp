@@ -160,11 +160,11 @@ namespace SMFLGame
         }
         else if(_isClicked(_getCreditsInButton(), vec))
         {
-            creditsInPressed();
+            getPlayer()->addCredits(1);
         }
         else if(_isClicked(_getCreditsOutButton(), vec))
         {
-            creditsOutPressed();
+           getPlayer()->removeCredits(1);
         }
     }
 }
