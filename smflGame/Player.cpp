@@ -6,6 +6,10 @@
 //
 
 #include "Player.hpp"
+
+/**
+ Number of credits required to play
+ */
 #define CREDITS_REQUIRED_TO_PLAY 1
 
 namespace SMFLGame

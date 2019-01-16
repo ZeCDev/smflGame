@@ -9,7 +9,7 @@
 #include "ResourcePath.hpp"
 #include <signal.h>
 
-#define FONT_FILE "sansation.ttf"
+#define FONT_FILE "Fonts/sansation.ttf"
 
 namespace SMFLGame
 {

@@ -38,7 +38,7 @@ int main(int, char const**)
 
     // Load a music to play
     sf::Music music;
-    if (!music.openFromFile(resourcePath() + "nice_music.ogg")) {
+    if (!music.openFromFile(resourcePath() + "Musics/nice_music.ogg")) {
         return EXIT_FAILURE;
     }
 

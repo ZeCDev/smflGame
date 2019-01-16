@@ -8,11 +8,11 @@
 #include "Menu.hpp"
 #include "ResourcePath.hpp"
 
-#define BACKGROUD_FILE "backgroundMenu.png"
+#define BACKGROUD_FILE "Backgrounds/backgroundMenu.png"
 
-#define START_BUTTON_FILE "StartActive.png"
-#define CREDITS_IN_BUTTON_FILE "CreditsInActive.png"
-#define CREDITS_OUT_BUTTON_FILE "CreditsOutActive.png"
+#define START_BUTTON_FILE "Buttons/StartActive.png"
+#define CREDITS_IN_BUTTON_FILE "Buttons/CreditsInActive.png"
+#define CREDITS_OUT_BUTTON_FILE "Buttons/CreditsOutActive.png"
 
 namespace SMFLGame
 {
