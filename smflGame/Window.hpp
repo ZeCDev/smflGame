@@ -12,8 +12,10 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include "Player.hpp"
+#include "Utils.hpp"
 
-#define NOT_FOUND_EXCEPTION "Could not found the file "
+#define WINDOW_WIDTH 1024
+#define WINDOW_HEIGHT 768
 
 namespace SMFLGame
 {
@@ -25,40 +27,40 @@ namespace SMFLGame
         virtual ~Window();
         
         /**
-         This function return a player that it was received
+         This function returns a player that it was received
          on the constructor
          @return The player.
          */
         SMFLGame::Player *getPlayer();
         
         /**
-         Return the window of the game
+         This function returns the window of the game
          @return The _window variable
          */
         sf::RenderWindow *getWindow();
         
         /**
-         If the _font is NULL, this function allocate and initialize,
+         If the _font is NULL, this function allocates and initializes,
          _font, otherwise return the font existent in _font.
          @return The font used in texts.
          */
         sf::Font *getFont();
         
         /**
-         This function return the state of that window.
+         This function returns the state of that window.
          Could be Idle, Running or Stopped.
          @return The state.
          */
         State getState();
         
         /**
-         This function change the state of that window.
+         This function changes the state of that window.
          @param state The state that this window will be change.
          */
         void setState(State state);
         
         /**
-        This function start the activity in the window.
+        This function starts the activity in the window.
         */
         void run();
         
@@ -70,19 +72,19 @@ namespace SMFLGame
         
         /**
          This function should be implemented on the derived class and
-         will be called before the window change the display.
+         will be called before the window changes the display.
          */
         virtual void _beforeDisplay() = 0; // must be override
         
         /**
          This function should be implemented on the derived class and
-         will be called after the window change the display.
+         will be called after the window changes the display.
          */
         virtual void _afterDisplay() = 0;
         
         /**
          This function should be implemented on the derived class and
-         will be called when the player press the start button.
+         will be called when the player presses the start button.
          */
         virtual void _startPressed() = 0;
         

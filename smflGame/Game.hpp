@@ -22,15 +22,47 @@ namespace SMFLGame
         
     private:
         
-        sf::CircleShape * _circle;
+        sf::Texture *_backgroudTexture;
+        sf::Sprite *_background;
+        
+        sf::CircleShape * _mainCircle;
+        sf::Vector2f * _mainCircleDirection;
+        
+        sf::CircleShape * _winCircle;
+        
+        int _iterations;
         
         /**
-         If the _circle is NULL, this function allocate and initialize,
-         _circle variable, otherwise return the CircleShape existent in
-         _circle variable.
+         If the _background is NULL, this function allocates and initializes,
+         _backgroundTexture and _background variable, otherwise
+         return the sprite existent in _background variable.
+         @return The sprite used in background.
+         */
+        sf::Sprite *_getBackground();
+        
+        /**
+         If the _mainCircle is NULL, this function allocates and initializes,
+         _mainCircle variable, otherwise return the CircleShape existent in
+         _mainCircle variable.
          @return The circle.
          */
-        sf::CircleShape * _getCircle();
+        sf::CircleShape * _getMainCircle();
+        
+        /**
+         If the _mainCircleDirection is NULL, this function allocates and initializes,
+         _mainCircleDirection variable, otherwise return the Vector2f existent in
+         _mainCircleDirection variable.
+         @return The circle.
+         */
+        sf::Vector2f * _getMainCircleDirection();
+        
+        /**
+         If the _winCircle is NULL, this function allocates and initializes,
+         _winCircle variable, otherwise return the CircleShape existent in
+         _winCircle variable.
+         @return The circle.
+         */
+        sf::CircleShape * _getWinCircle();
         
         /**
          @See superclass
@@ -47,21 +79,23 @@ namespace SMFLGame
          */
         void _afterDisplay();
         
+        /**
+         This function puts all objects in the initial position.
+         */
         void _setToBeginPositions();
         
         /**
-         This function evaluate if a shape is outside the window.
-         @param shape The shape to be evaluated.
-         @return true if the shape position it's part of window
-         otherwise return false.
-         */
-        bool _isOutOfBounds(sf::CircleShape shape);
-        
-        /**
-         This function it's used to update the position of all
-         the elements of that window.
+         This function it is used to update the position of all
+         elements of that window.
          */
         void _updateObjectsPosition();
+        
+        /**
+         This function updates the velocity and position of the circle.
+         @param circle The circle to be updated.
+         @param circleDirection The direction of that circle.
+         */
+        void _updateCircles(sf::CircleShape * circle, sf::Vector2f * circleDirection);
     };
 }
 

@@ -6,7 +6,6 @@
 //
 
 #include "Menu.hpp"
-#include "ResourcePath.hpp"
 
 #define BACKGROUD_FILE "Backgrounds/backgroundMenu.png"
 
@@ -30,20 +29,11 @@ namespace SMFLGame
         delete _startButtonTexture;
     }
     
-    sf::Texture * Menu::_createTexture(std::string file)
-    {
-        sf::Texture * texture = new sf::Texture();
-        if (!texture->loadFromFile(resourcePath() + file)) {
-            throw std::runtime_error(std::string(NOT_FOUND_EXCEPTION) + file);
-        }
-        return texture;
-    }
-    
     sf::Sprite* Menu::_getBackground()
     {
         if(this->_background == NULL){
             //The texture should be saved in heap
-            this->_backgroudTexture = _createTexture(BACKGROUD_FILE);
+            this->_backgroudTexture = Utils::createTexture(BACKGROUD_FILE);
             this->_background = new sf::Sprite(*(this->_backgroudTexture));
         }
         return this->_background;
@@ -53,7 +43,7 @@ namespace SMFLGame
     {
         if(this->_startButton == NULL){
             //The texture should be saved in heap
-            this->_startButtonTexture = _createTexture(START_BUTTON_FILE);
+            this->_startButtonTexture = Utils::createTexture(START_BUTTON_FILE);
             this->_startButton = new sf::Sprite(*(this->_startButtonTexture));
             this->_startButton->setPosition(getWindow()->getSize().x/2 - 300, getWindow()->sf::Window::getSize().y/2 - 100);
             this->_startButton->setScale(0.4f,0.4f);
@@ -65,7 +55,7 @@ namespace SMFLGame
     {
         if(this->_creditsInButton == NULL){
             //The texture should be saved in heap
-            this->_creditsInButtonTexture = _createTexture(CREDITS_IN_BUTTON_FILE);
+            this->_creditsInButtonTexture = Utils::createTexture(CREDITS_IN_BUTTON_FILE);
             this->_creditsInButton = new sf::Sprite(*(this->_creditsInButtonTexture));
             this->_creditsInButton->setPosition(getWindow()->getSize().x/2 - 100, getWindow()->sf::Window::getSize().y/2 - 100);
             this->_creditsInButton->setScale(0.4f,0.4f);
@@ -77,7 +67,7 @@ namespace SMFLGame
     {
         if(this->_creditsOutButton == NULL){
             //The texture should be saved in heap
-            this->_creditsOutButtonTexture = _createTexture(CREDITS_OUT_BUTTON_FILE);
+            this->_creditsOutButtonTexture = Utils::createTexture(CREDITS_OUT_BUTTON_FILE);
             this->_creditsOutButton = new sf::Sprite(*(this->_creditsOutButtonTexture));
             this->_creditsOutButton->setPosition(getWindow()->getSize().x/2 + 100, getWindow()->sf::Window::getSize().y/2 - 100);
             this->_creditsOutButton->setScale(0.4f,0.4f);

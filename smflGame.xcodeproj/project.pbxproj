@@ -12,6 +12,7 @@
 		99139FFC21EFECEA00CB3839 /* Backgrounds in Resources */ = {isa = PBXBuildFile; fileRef = 99139FF821EFECEA00CB3839 /* Backgrounds */; };
 		99139FFD21EFECEA00CB3839 /* Buttons in Resources */ = {isa = PBXBuildFile; fileRef = 99139FF921EFECEA00CB3839 /* Buttons */; };
 		99139FFE21EFECEA00CB3839 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 99139FFA21EFECEA00CB3839 /* Fonts */; };
+		9913A00121F1256B00CB3839 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99139FFF21F1256B00CB3839 /* Utils.cpp */; };
 		9986433521EB5E1D007FBBAC /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9986433421EB5E1D007FBBAC /* ResourcePath.mm */; };
 		9986433821EB5E1D007FBBAC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9986433721EB5E1D007FBBAC /* main.cpp */; };
 		9986434921EB7B84007FBBAC /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9986434721EB7B84007FBBAC /* Menu.cpp */; };
@@ -26,6 +27,8 @@
 		99139FF821EFECEA00CB3839 /* Backgrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Backgrounds; sourceTree = "<group>"; };
 		99139FF921EFECEA00CB3839 /* Buttons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Buttons; sourceTree = "<group>"; };
 		99139FFA21EFECEA00CB3839 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		99139FFF21F1256B00CB3839 /* Utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		9913A00021F1256B00CB3839 /* Utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
 		9986432F21EB5E1D007FBBAC /* smflGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smflGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9986433321EB5E1D007FBBAC /* smflGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "smflGame-Info.plist"; sourceTree = "<group>"; };
 		9986433421EB5E1D007FBBAC /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 			children = (
 				9986433421EB5E1D007FBBAC /* ResourcePath.mm */,
 				9986433621EB5E1D007FBBAC /* ResourcePath.hpp */,
+				99139FFF21F1256B00CB3839 /* Utils.cpp */,
+				9913A00021F1256B00CB3839 /* Utils.hpp */,
 				9986438E21EE6928007FBBAC /* Window.cpp */,
 				9986438F21EE6928007FBBAC /* Window.hpp */,
 				9986434721EB7B84007FBBAC /* Menu.cpp */,
@@ -203,6 +208,7 @@
 			files = (
 				9986434921EB7B84007FBBAC /* Menu.cpp in Sources */,
 				9986439021EE6928007FBBAC /* Window.cpp in Sources */,
+				9913A00121F1256B00CB3839 /* Utils.cpp in Sources */,
 				9986433821EB5E1D007FBBAC /* main.cpp in Sources */,
 				9986433521EB5E1D007FBBAC /* ResourcePath.mm in Sources */,
 				9986438A21ED2F49007FBBAC /* Game.cpp in Sources */,

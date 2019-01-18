@@ -37,14 +37,7 @@ namespace SMFLGame
         SMFLGame::Game * _game;
         
         /**
-         Allocate a texture and load a image from file passed by parameter.
-         @param file The name of the file on resourcesPath.
-         @return The new allocated texture.
-         */
-        sf::Texture * _createTexture(std::string file);
-        
-        /**
-         If the _background is NULL, this function allocate and initialize,
+         If the _background is NULL, this function allocates and initializes,
          _backgroundTexture and _background variable, otherwise
          return the sprite existent in _background variable.
          @return The sprite used in background.
@@ -52,7 +45,7 @@ namespace SMFLGame
         sf::Sprite *_getBackground();
         
         /**
-         If the _startButton is NULL, this function allocate and initialize,
+         If the _startButton is NULL, this function allocates and initializes,
          _startButtonTexture and _startButton variable, otherwise
          return the sprite existent in _startButton variable.
          @return The sprite used in startButton.
@@ -60,7 +53,7 @@ namespace SMFLGame
         sf::Sprite *_getStartButton();
         
         /**
-         If the _creditsInButton is NULL, this function allocate and initialize,
+         If the _creditsInButton is NULL, this function allocates and initializes,
          _creditsInButtonTexture and _creditsInButton variable, otherwise
          return the sprite existent in _creditsInButton variable.
          @return The sprite used in creditsInButton.
@@ -68,7 +61,7 @@ namespace SMFLGame
         sf::Sprite *_getCreditsInButton();
         
         /**
-         If the _creditsOutButton is NULL, this function allocate and initialize,
+         If the _creditsOutButton is NULL, this function allocates and initializes,
          _creditsOutButtonTexture and _creditsOutButton variable, otherwise
          return the sprite existent in creditsOutButton variable.
          @return The sprite used in creditsInButton.
@@ -76,17 +69,17 @@ namespace SMFLGame
         sf::Sprite *_getCreditsOutButton();
         
         /**
-         This function draw all menu sprites on the window.
+         This function draws all menu sprites on the window.
          */
         void _drawSprites();
         
         /**
-         This function draw all the text counters on the window.
+         This function draws all the text counters on the window.
          */
         void _drawCounters();
         
         /**
-         If the _game is NULL, this function allocate and initialize,
+         If the _game is NULL, this function allocates and initializes,
          _game variable, otherwise return the Game existent in
          game variable.
          @return The game window.
@@ -94,7 +87,7 @@ namespace SMFLGame
         SMFLGame::Game *_getGame();
         
         /**
-         This function evaluate if a sprite is clicked.
+         This function evaluates if a sprite is clicked.
          @param sprite The sprite to be evaluated.
          @param vec The point to be compared.
          @return true if the sprite position it's part of vec
